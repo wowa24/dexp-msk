@@ -245,50 +245,14 @@
                         </div>
                         <div>
               
-<script type="text/javascript" >
-function createLead() {
-    var phone = '74991106316'; // номер клиента, обязательно
-    var comment = 'Комментарий'; // комментарий, не обязательно
-    var apiToken = 'dba5f410b6d118e29d57400b95fd5710e93ba3e8ac2fcde2d1db661b732d98fe3cac19df3d1b5156'; // токен со страницы Настройки, обязательно
-    var createLeadUrl = new URL('https://cpa.ruki-iz-plech.ru/api/leads/create/form/' + apiToken);
-    createLeadUrl.searchParams.append('phone', phone);
-    createLeadUrl.searchParams.append('comment', comment);
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", createLeadUrl, true);
-    xhr.send();
-}
-createLead();
-</script>
 
-<?php
-$curl = curl_init();
-curl_setopt_array($curl, [
-    CURLOPT_URL            => 'https://cpa.ruki-iz-plech.ru/api/leads/create',
-    CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_ENCODING       => '',
-    CURLOPT_MAXREDIRS      => 10,
-    CURLOPT_TIMEOUT        => 30,
-    CURLOPT_HTTP_VERSION   => CURL_HTTP_VERSION_1_1,
-    CURLOPT_CUSTOMREQUEST  => 'POST',
-    CURLOPT_POSTFIELDS     => json_encode([
-        'phone'   => '74991106316', // номер клиента, обязательно
-        'message' => 'Комментарий', // комментарий, не обязательно
-    ], JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES),
-    CURLOPT_HTTPHEADER     => [
-        'auth: dba5f410b6d118e29d57400b95fd5710e93ba3e8ac2fcde2d1db661b732d98fe3cac19df3d1b5156', // токен со страницы Настройки, обязательно
-        'content-type: application/json',
-    ],
-]);
-$response = curl_exec($curl);
-$err = curl_error($curl);
-curl_close($curl);
-if ($err) {
-    echo 'cURL Error #:' . $err;
-} else {
-    echo $response;
-}
-?>
-
+				
+Убедитесь, что форма отправляет данные на файл rip_lead.php, и что используются корректные название полей ввода:
+<form action="/rip_lead.php" method="POST">
+    <input type="text" name="phone">
+    <input type="text" name="message">
+    <button type="submit">Отправить</button>
+</form>
 
 				
 
