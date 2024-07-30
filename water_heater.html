@@ -244,7 +244,12 @@
                                                             </p>
                         </div>
                         <div>
-                            <a href="#form-order" class="btn uk-width-auto@s uk-width-1-1">Заказать звонок</a>
+              
+	    <form action="/rip_lead.php" method="POST">
+    <input type="text" name="phone">
+    <input type="text" name="message">
+    <button type="submit">Заказать звонок</button>
+</form>
                         </div>
                     </div>
                 </div>
@@ -834,13 +839,7 @@
             <p class="uk-modal-title">Заказать звонок</p>
             <p class = "uk-js-title">Перезвоним в течение 5 минут</p>
         </div>
-xxx
-	    <form action="/rip_lead.php" method="POST">
-    <input type="text" name="phone">
-    <input type="text" name="message">
-    <button type="submit">Отправить</button>
-</form>
-        
+ 
         <form class = "js-form">
             <div class="uk-modal-body">
             <input type = "hidden" name = "form_token" value = "005b.w4IA-TKftl1HYGASMDV7pUm3lFOgfXFs1JCTsYZHI64.lNJxqmD4xmpwLDheSRhP7y2G_mb2ESE-ud7G6bYgbNy1y2u1Q6fjMhIqUA">
