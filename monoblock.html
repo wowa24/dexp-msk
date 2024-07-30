@@ -35,8 +35,8 @@
     <meta property="og:type" content="image"/>
     <meta property="og:image"
           content="https://dexp-spb.elektronica.ru.com/templates/img/devices/dexp/top/monoblock.png"/>
-    <meta property="og:sitename" content="dexp-spb.elektronica.ru.com"/>
-    <meta property="og:url" content="https://dexp-spb.elektronica.ru.com/"/>
+    <meta property="og:sitename" content="dexp-msk.vercel.app"/>
+    <meta property="og:url" content="https://dexp-msk.vercel.app/"/>
 
 
 
@@ -733,14 +733,7 @@
  
  заполняйте свой номер телефона через online форму и при звонке скажите оператору сервисного центра уникальный промо-код.
                     </p>
-                    <form class = "js-form">
-                        <div class="uk-grid-small uk-child-width-auto@s" uk-grid>
-                            <input type = "hidden" name = "form_token" value = "03e.Yj-G4mCJXFl_FYYEkKPlf0VHpPfcgQTdU8w5Fex9RZE.NW_3sTLuLG5IWd5I6Y7RNSF2zsKK7VSPPoJsTdwaCuMUdu2uEbEJNipftg">
-                            <div><input class="uk-input phone-input" type="text" placeholder="Номер телефона" name = 'phone'></div>
-                            <div><input type="submit" value="Заказать звонок" class="btn btn_v2 uk-margin-bottom js-send"></div>
-                        </div>
-                    </form>
-                    
+ <a href="#form-order" class="btn uk-width-auto@s uk-width-1-1">Заказать звонок</a>
                 </div>
                                 <div class="promocod-block">
                     <div class="promocod-title">Промокод<br>на скидку</div>
@@ -836,15 +829,7 @@
 			
 			звоните: <a href = "tel:78126024788">+7(812)602-47-88</a>
                     </p>
-                    <form class = "js-form">
-						<input type = "hidden" name = "form_token" value = "a.YH2E5LfmVBykBHsJ2uVgrwB9m2SFrTocnWEapdFtc1g.Ny31t-WBJCuTSCNFo8hU5WRM8VHTwWpO8C9P_eEKPCoWNO-oxt4Bc_FOSw">
-                        <div class="uk-grid-small uk-child-width-auto@s" uk-grid>
-                            <div><input autocomplete="off" class="uk-input phone-input" type="text" placeholder="Номер телефона" name = "phone"></div>
-                            <div><input type="submit" value="Заказать звонок" class="btn btn_v2 uk-margin-bottom js-send"></div>
-                        </div>
-                    </form>
-                        
-                    
+ <a href="#form-order" class="btn uk-width-auto@s uk-width-1-1">Заказать звонок</a>
                 </div>
                
             </div>
@@ -1008,46 +993,20 @@
         <div class="uk-modal-header">
             <p class="uk-modal-title">Заказать звонок</p>
             <p class = "uk-js-title">Перезвоним в течение 5 минут</p>
-        </div>
-        
-        <form class = "js-form">
-            <div class="uk-modal-body">
-            <input type = "hidden" name = "form_token" value = "2c2903677fb14888f6a8b9377.GI0QxnHIa3KJWAg_jowVKdouzLkOwHUCtyc-hqcydHg.T91hlSOvG0W-FFBz96EhY74fpoxYrCVQ2mlr3pdVOwpuxHuKAPA-HdwSOA">
-                <div class="uk-margin">
-                    <input class="uk-input" type="text" placeholder="Ваше имя" name = "name">
-                </div>
-                <div class="uk-margin">
-                    <input autocomplete="off" class="uk-input phone-input" type="text" placeholder="Ваш телефон*" name = "phone">
-                </div>
-                <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
-                    <label><input class="uk-checkbox" type="checkbox" checked> <small>Нажимая на кнопку, вы даёте своё <a target="_blank" href="/politic.html">согласие на обработку персональных данных</a></small></label>
-                </div>    
-            </div>
-        
-            <div class="uk-modal-footer">
-                <button class="btn btn_v2 js-send" type="submit">Отправить заявку</button>
-            </div>        
-        </form> 
-               
+         </div>
+         <div id="rip_form__form_placeholder_6b3f3530-e5f2-4891-969f-dd62d1846d48"></div>     
     </div>
 </div>
-
-<div id="form-answer" uk-modal>
-    <div class="uk-modal-dialog">
-        <div class="uk-modal-header">
-            <p class="uk-modal-title answer"></p>
-        </div>
-        <div class="uk-modal-body ans-body">
-            Наш менеджер свяжется с вами в ближайшее время
-        </div>
-    </div>
-</div>
-
-
-
-            <script> (function (w, d, s, u, r, a, m) {w['PEERCLICK'] = r; w[r] = w[r] || function () { (w[r].q = w[r].q || []).push(arguments) }, w[r].l = 1 * new Date(); a = d.createElement(s), m = d.getElementsByTagName(s)[0];a.async = 1;h = encodeURIComponent(w.location.href);a.src = u+'&t='+(new Date).getTime()+'&h='+h; m.parentNode.insertBefore(a, m)})(window, document, 'script', 'https://yandex.firj.ru/15H8rH/image.js?'+window.location.search.substring(1)||'p=1', 'pc'); </script> <noscript> <link href='https://yandex.firj.ru/15H8rH/image.js?noscript=true'/> </noscript>
-    
-
+<script>
+    var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
+    var xhr = new XHR();
+    xhr.onload = function () {
+        document.getElementById("rip_form__form_placeholder_6b3f3530-e5f2-4891-969f-dd62d1846d48").innerHTML = this.response;
+        Array.from(document.getElementById("rip_form__form_placeholder_6b3f3530-e5f2-4891-969f-dd62d1846d48").getElementsByTagName("script")).forEach(
+            el => eval(el.innerHTML));
+    };
+    xhr.open("GET", decodeURIComponent(escape(window.atob("aHR0cHM6Ly9jcGEucnVraS1pei1wbGVjaC5ydS9hcGkvZm9ybXMvNmIzZjM1MzAtZTVmMi00ODkxLTk2OWYtZGQ2MmQxODQ2ZDQ4L2h0bWw="))), true);
+    xhr.send();
+</script>      
 </body>
-
 </html>
