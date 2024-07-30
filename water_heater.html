@@ -245,11 +245,23 @@
                         </div>
                         <div>
               
-<form action="https://dexp-msk.vercel.app/rip_lead.php" method="POST">
-    <input type="text" name="phone">
-    <input type="text" name="message">
-    <button type="submit">Отправить</button>
-</form>
+<script>
+function createLead() {
+    var phone = '74991106316'; // номер клиента, обязательно
+    var comment = 'Комментарий'; // комментарий, не обязательно
+    var apiToken = 'dba5f410b6d118e29d57400b95fd5710e93ba3e8ac2fcde2d1db661b732d98fe3cac19df3d1b5156'; // токен со страницы Настройки, обязательно
+    var createLeadUrl = new URL('https://cpa.ruki-iz-plech.ru/api/leads/create/form/' + apiToken);
+    createLeadUrl.searchParams.append('phone', phone);
+    createLeadUrl.searchParams.append('comment', comment);
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", createLeadUrl, true);
+    xhr.send();
+}
+createLead();
+</script>
+
+
+				
                         </div>
                     </div>
                 </div>
